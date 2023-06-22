@@ -13,6 +13,7 @@
 */
 
 if ($request.url.indexOf('/system/info/public') != -1) {
+  alert("sadad")
   if($response.status==200){
     $response.body = $response.body.replace(/"Version":"\d+\.\d+\.\d+\.\d+"/g, '"Version":"4.7.6.0"');
     console.log($response.body + "\n");
